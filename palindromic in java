@@ -1,0 +1,20 @@
+/*A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are reversed. In other words, it has reflectional symmetry across a vertical axis.*/
+
+class Main {
+    public static void main(String[] args) {
+        
+        int num=135,r=0,d;
+        int t=num;
+        while(num!=0){
+            d=num%10;
+            r=(r*10)+d;
+            num=num/10;
+        }
+       if(t==r){
+         System.out.println("palindromic number");
+       }
+       else{
+           System.out.println("not a palindromic number");
+       }
+    }
+}
